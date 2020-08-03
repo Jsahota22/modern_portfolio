@@ -152,6 +152,20 @@ main {
     main#home h1 {
       margin-top: 20vh; }
 
+.slide-left {
+  width: 100%;
+  overflow: hidden; }
+  .slide-left .sm-heading {
+    animation: slide-left 3s; }
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -175,6 +189,12 @@ main {
     background: #9c9898;
     padding: 0.5rem;
     border-bottom: #e9c707 5px solid; }
+    .about-info .job h3 {
+      text-decoration: underline solid #e9c707;
+      font-size: x-large;
+      font-weight: bold;
+      text-align: center;
+      color: #e9c707; }
 
 .projects {
   display: grid;

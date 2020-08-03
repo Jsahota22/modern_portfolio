@@ -72,6 +72,28 @@ main {
   }
 }
 
+.slide-left {
+  width:100%;
+  overflow:hidden;
+
+  .sm-heading {
+    animation: slide-left 3s;
+  }
+  
+  @keyframes slide-left {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+}
+
+
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -106,6 +128,14 @@ main {
     background: #9c9898;
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+
+    h3 {
+      text-decoration: underline solid $secondary-color;
+      font-size: x-large;
+      font-weight: bold;
+      text-align: center;
+      color: $secondary-color;
+    }
   }
 }
 
